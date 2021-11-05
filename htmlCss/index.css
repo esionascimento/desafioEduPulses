@@ -41,6 +41,11 @@ button {
   padding: 10px;
 }
 
+.textos {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -48,11 +53,6 @@ button {
   width: 400px;
   padding: 10px;
   border: 1px solid silver;
-}
-
-.textos {
-  display: flex;
-  justify-content: center;
 }
 
 p {
@@ -72,6 +72,22 @@ input {
   margin: 5px 0 10px 0;
 }
 
+.divForm {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset:nth-of-type(1){ transform: rotate(180deg); }
+fieldset:nth-of-type(1)>legend{ transform: rotate(180deg); } 
+fieldset:nth-of-type(1)>div{ transform: rotate(180deg); }
+
+legend{
+  padding: 0px;
+  position: relative;
+  top: -3%;
+  transform: translateY(-50%); 
+}
+
 .textA {
   
 }
@@ -83,14 +99,3 @@ input {
 .textC {
   
 }
-
-.divForm {
-  display: flex;
-  flex-direction: column;
-}
-
-
-fieldset:nth-of-type(1){ transform: rotate(180deg); }
-fieldset:nth-of-type(1)>legend{ transform: rotate(180deg); } 
-/* fieldset:nth-of-type(1)>label{ transform: rotate(180deg); } */
-fieldset:nth-of-type(1)>div{ transform: rotate(180deg); }
