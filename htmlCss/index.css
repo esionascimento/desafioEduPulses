@@ -3,10 +3,25 @@ html body {
   padding: 0px;
 }
 
+.divImagem {
+  text-align: center;
+}
+
 .imagem {
-  height: 300px;
-  width: 300px;
-  background-color: silver;
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+}
+
+button {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.buttonEsquerda {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .container {
@@ -14,9 +29,68 @@ html body {
 }
 
 .esquerda {
-
+  background-color: aqua;
+  width: 400px;
 }
 
 .direita {
-
+  display: flex;
+  flex-direction: column;
+  background-color: salmon;
+  width: 100%;
+  padding: 10px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.textos {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: inline-block;
+  height: 300px;
+  width: 200px;
+  border: 1px solid silver;
+  margin: 10px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+input {
+  width: 300px;
+  margin: 5px 0 10px 0;
+}
+
+.textA {
+  
+}
+
+.textB {
+  align-content: center;
+}
+
+.textC {
+  
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+}
+
+
+fieldset:nth-of-type(1){ transform: rotate(180deg); }
+fieldset:nth-of-type(1)>legend{ transform: rotate(180deg); } 
+/* fieldset:nth-of-type(1)>label{ transform: rotate(180deg); } */
+fieldset:nth-of-type(1)>div{ transform: rotate(180deg); }
