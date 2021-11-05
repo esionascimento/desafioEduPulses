@@ -1,0 +1,22 @@
+html body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.imagem {
+  height: 300px;
+  width: 300px;
+  background-color: silver;
+}
+
+.container {
+  display: flex;
+}
+
+.esquerda {
+
+}
+
+.direita {
+
+}
