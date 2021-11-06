@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <script src="index.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.0-alpha.9/antd.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  
+  <title>Questão 01</title>
+</head>
+<body>
+  <div class="container">
+    <div class="esquerda">
+      <div class="divImagem">
+        <img class="imagem" src="/img/undraw_programmer_re_owql.svg" alt="My Happy SVG"/>
+        <!-- <a href='https://dryicons.com/free-icons/logo'> Icon by Dryicons </a> -->
+      </div>
+        <button>Botão 1</button>
+        <button disabled>Botão 2</button>
+    </div>
+    <div class="direita">
+      <div class="boxSuperior">
+        <span class="textA">TEXTO A</span>
+        <span class="textB">TEXTO B</span>
+        <span class="textC">TEXTO C</span>
+      </div>
+      <div class="boxInferior">
+        <fieldset class="form">
+          <legend><button onClick="submit()"><a id="aModal">Enviar</a></button></legend>
+          <div class="divForm">
+            <label>Nome</label>
+            <input type="text" id="name"/>
+            
+            <label>Data de nascimento</label>
+            <input type="date" id="date"/>
+            
+            <label>Cidade</label>
+            <input type="text" id="city"/>
+          </div>
+        </fieldset>
+
+        <!-- Login modal embedded in page -->
+        <div id="login-modal" class="modal">
+          <p>Resultado do formulário:</p>
+          <p>Nome: </p>
+          <p>Data de nascimento: </p>
+          <p>Cidade: </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
