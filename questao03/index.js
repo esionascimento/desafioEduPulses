@@ -60,7 +60,6 @@ async function getCategories() {
       categories.push(aux);
     });
     getAleatorio();
-    resquestPessoa();
   });
 }
 
@@ -68,9 +67,13 @@ async function resquestPessoa() {
   const apiResponse = await requeste(`https://geradorbrasileiro.com/api/faker/pessoa?limit=${countB}`).then((dataPessoa) => {
     const auxSalvePessoa = dataPessoa.values;
     console.log('dataPessoa.values :', dataPessoa.values);
-    dataPessoa.map((data) => {
-      arrayPessoa.push(data)
+    auxSalvePessoa.map((data) => {
+      const nome = data.nome;
+      const dataNascimento = data.dataNascimento;
+      const cidade = data.endereco.cidade;
+      arrayPessoa.push({ nome, dataNascimento, cidade })
     })
+    console.log('arrayPessoa :', arrayPessoa);
   });
 }
 
@@ -88,7 +91,8 @@ function main() {
       op = value;
       switch(value) {
         case '1': console.log('Carregando...');
-        getCategories();
+                  resquestPessoa();
+                  getCategories();
           break;
         case '2':console.log('Listando...')
           break;
