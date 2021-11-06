@@ -1,9 +1,5 @@
 function submit() {
   console.log('entrei');
-  $("#aModal").click(function(){
-    console.log('oi')
-    $("#login-modal").modal('focus');
-  });
   /* const aux = document.getElementById('login-modal');
   const aux1 = document.getElementsByClassName('modal');
   aux.addEventListener('shown.bs.modal', function() {
@@ -21,8 +17,10 @@ function submit() {
   /* const aux = document.getElementById('aModal');
   aux = attribute('rel', 'modal:open') */
   /* $('#aModal').modal('backdrop') */
-  toastr["error"]("Erro: Data inválida")
   if (dia < 1 || dia > 31) {
-    
+    toastr["error"]("Erro: Data inválida")
+  } else {
+      console.log('oi')
+      $("#login-modal").modal('focus');
   }
 }
